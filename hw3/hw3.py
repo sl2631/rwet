@@ -35,7 +35,7 @@ def gen_poem(n):
     j = i + 1
     if j == n: # last line
       p = '!'
-    elif j % (n / 4) == 0:
+    elif j % 4 == 0: # divisible by 4
       p = ';'
     else:
       p = ','
